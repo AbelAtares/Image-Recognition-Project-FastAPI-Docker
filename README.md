@@ -106,6 +106,7 @@ This ensured that the Dockerized version behaves exactly like the local version.
 
 A screenshot demonstrating a successful image recognition inference has been included in the `screenshots` folder. This captures a real API request executed through the FastAPI endpoint, validating the correct functioning of the deployed model and confirming consistent inference results in a production-like environment.
 
+---
 
 ## 10. Future Improvements
 
