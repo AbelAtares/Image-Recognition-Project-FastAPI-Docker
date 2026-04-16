@@ -61,7 +61,7 @@ Before containerization, the system was tested locally to ensure correct functio
 - Verified model loading and inference in Python
 - Tested preprocessing pipeline with sample images
 - Confirmed correct Top 5 predictions output
-- Validated FastAPI endpoints using `/docs`
+- Validated FastAPI endpoints
 
 This ensured the system was working correctly before deployment.
 
@@ -76,40 +76,37 @@ A Docker image was created including:
 - Required dependencies
 - Model code and API
 
-The container can be built and executed using:
-  docker build -t img-recog .
-  docker run -p 8000:8000 img-recog
-
 ---
 
 ## 7. Deployment Verification
 
 After containerization, the system was validated by:
 
-Running the Docker container successfully
-Accessing the API at http://127.0.0.1:8000
-Testing image uploads through Swagger UI
-Confirming identical predictions to local execution
+- Running the Docker container successfully
+- Accessing the API
+- Testing image uploads through Swagger UI
+- Confirming identical predictions to local execution
 
 This ensured that the Dockerized version behaves exactly like the local version.
 
 ---
 
 ## 8. Key Features
-Pre-trained deep learning model (ResNet18)
-Image classification using ImageNet labels
-Top 5 prediction output with confidence scores
-REST API built with FastAPI
-Dockerized deployment for reproducibility
-End-to-end ML inference pipeline
+
+- Pre-trained deep learning model (ResNet18)
+- Image classification using ImageNet labels
+- Top 5 prediction output with confidence scores
+- REST API built with FastAPI
+- Dockerized deployment for reproducibility
+- End-to-end ML inference pipeline
 
 ---
 
 ## 9. Future Improvements
-Add GPU (CUDA) support for faster inference
-Replace ResNet18 with more advanced architectures (EfficientNet, Vision Transformers)
-Improve preprocessing and augmentation pipeline
-Add batch prediction endpoint
-Deploy to cloud (AWS / Azure / Hugging Face Spaces)
-Add authentication layer for API security
-Build a simple frontend for image upload and visualization
+
+- Add GPU (CUDA) support for faster inference
+- Replace ResNet18 with more advanced architectures
+- Add batch prediction endpoint
+- Deploy to cloud (AWS / Azure / Hugging Face Spaces)
+- Add authentication layer for API security
+- Build a simple frontend for image upload and visualization
