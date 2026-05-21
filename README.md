@@ -95,8 +95,8 @@ This ensured that the Dockerized version behaves exactly like the local version.
 
 To test the API locally, first build and run the Docker container:
 
-docker build -t image-recognition-api .
-docker run -p 8000:8000 image-recognition-api
+- docker build -t image-recognition-api .
+- docker run -p 8000:8000 image-recognition-api
 
 ---
 
